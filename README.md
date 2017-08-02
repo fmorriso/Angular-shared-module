@@ -4,6 +4,17 @@
 
 Angula-CLI 1.2.6 + Angular 4.3.2 used to create the[Angular ngModule tutorial](https://angular.io/guide/ngmodule)
 
+## Angular-CLI considerations
+
+In order to remain true to the flat structure of the tutorial, any time the `ng` command was used to generatte something, 
+I used the `--flat` directive:
+
+```npm
+ng generate directive Highlight --flat
+ng generate component Title --flat
+ng generate service User --module app.module --flat
+```
+
 ## Angular-CLI usual "stuff"
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
