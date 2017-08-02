@@ -4,6 +4,7 @@ import {NgModule} from '@angular/core';
 import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import { HighlightDirective } from './highlight.directive';
+import { TitleComponent } from './title.component';
 
 @NgModule({
 	imports: [
@@ -12,7 +13,8 @@ import { HighlightDirective } from './highlight.directive';
 	],
 	declarations: [
 		AppComponent,
-		HighlightDirective
+		HighlightDirective,
+		TitleComponent
 	],
 	providers: [],
 	bootstrap: [AppComponent]
