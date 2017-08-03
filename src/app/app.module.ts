@@ -1,6 +1,5 @@
 import { BrowserModule }      from '@angular/platform-browser';
 import { NgModule }           from '@angular/core';
-// import { FormsModule }        from '@angular/forms';
 
 /* App Root */
 import { AppRoutingModule }   from './app-routing.module';
@@ -9,8 +8,8 @@ import { HighlightDirective } from './highlight.directive';
 import { TitleComponent }     from './title.component';
 import { UserService }        from './user.service';
 
+/* Contact - one-stop shopping via a separate NgModule: */
 import { ContactModule }      from './contact/contact.module';
-
 
 @NgModule({
 	imports: [
