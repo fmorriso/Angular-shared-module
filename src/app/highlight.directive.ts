@@ -6,10 +6,12 @@ import { Directive, ElementRef } from '@angular/core';
 /** Highlight the attached element in gold */
 export class HighlightDirective {
 
+	private backgroundColor: string = 'gold';
+
 	constructor(el: ElementRef) {
-		el.nativeElement.style.backgroundColor = 'gold';
+		el.nativeElement.style.backgroundColor = this.backgroundColor;
 		console.log(
-			`* AppRoot highlight called for ${el.nativeElement.tagName}`);
+			`* Contact highlight called for ${el.nativeElement.tagName}, color=${this.backgroundColor}`);
 	}
 
 }
