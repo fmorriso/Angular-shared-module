@@ -2,7 +2,7 @@
 
 ## Background
 
-Angula-CLI 1.2.6 + Angular 4.3.2 used to create the[Angular ngModule tutorial](https://angular.io/guide/ngmodule)
+Angular-CLI 1.2.6 + Angular 4.3.2 used to create the[Angular ngModule tutorial](https://angular.io/guide/ngmodule)
 
 ## Angular-CLI considerations
 
@@ -14,8 +14,8 @@ ng new Angular-shared-module --verbose --skip-install --skip-tests --skip-commit
 ```
 
 In order to remain true to the flat structure of the tutorial, any time I needed to use the `ng` command
-to generate something, I included the `--flat` directive to prevent Angular-CLI of creating a separate folder
-for the new item being created.  Examples:
+to generate something, I included the `--flat` directive to prevent Angular-CLI from defaulting to its usual practice of
+creating a separate folder for the new item being created.  Examples:
 
 ```npm
 ng generate directive Highlight --flat
