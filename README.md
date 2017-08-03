@@ -2,7 +2,7 @@
 
 ## Background
 
-A project that uses Angular-CLI 1.2.6 and Angular 4.3.2 to follow the [Angular ngModule tutorial](https://angular.io/guide/ngmodule).
+A project that uses Angular-CLI 1.2.7 and Angular 4.3.3 to follow the [Angular ngModule tutorial](https://angular.io/guide/ngmodule).
 
 Additional supporting tools:
 * TypeScript 2.4.2
