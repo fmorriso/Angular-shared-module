@@ -2,7 +2,11 @@
 
 ## Background
 
-Angular-CLI 1.2.6 + Angular 4.3.2 used to create the[Angular ngModule tutorial](https://angular.io/guide/ngmodule)
+A project that uses Angular-CLI 1.2.6 and Angular 4.3.2 to create the[Angular ngModule tutorial](https://angular.io/guide/ngmodule).
+
+Additional supporting tools:
+* TypeScript 2.4.2
+* WebStorm 2017.2.1 EAP
 
 ## Angular-CLI considerations
 
