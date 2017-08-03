@@ -15,6 +15,11 @@ ng generate component Title --flat
 ng generate service User --module app.module --flat
 ```
 
+The exceptions are the Contact-related code, which the tutorial asks be generated in a contact folder:
+```npm
+ng generate component Contact
+```
+
 ## Angular-CLI usual "stuff"
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
