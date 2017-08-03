@@ -23,7 +23,8 @@ ng generate component Title --flat
 ng generate service User --module app.module --flat
 ```
 
-The exceptions to the "everything is flat" technique shown above is all of the Contact-related code, which the tutorial asks that everything be generated within the `contact` folder:
+The exceptions to the "everything is flat" technique shown above is all of the Contact-related code, 
+which the tutorial asks be generated all within the `contact` folder:
 ```
 ng generate component Contact
 ng generate directive contact/Highlight
