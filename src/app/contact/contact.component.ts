@@ -17,11 +17,11 @@ export class ContactComponent implements OnInit {
 	msg = 'Loading contacts ...';
 	userName = '';
 
-	constructor(private contactService: ContactService, userService: UserService) {
-		this.userName = userService.userName;
+	constructor(private contactService: ContactService, private userService: UserService) {
 	}
 
 	ngOnInit() {
+		this.userName = this.userService.userName;
 		this.contactService.getContacts().then(contacts => {
 			this.msg = '';
 			this.contacts = contacts;
