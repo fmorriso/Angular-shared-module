@@ -8,8 +8,9 @@ import { HighlightDirective } from './highlight.directive';
 import { TitleComponent }     from './title.component';
 import { UserService }        from './user.service';
 
-/* Contact - one-stop shopping via a separate feature module: */
+/* Feature Modules that have their own routing */
 import { ContactModule }      from './contact/contact.module';
+import { CrisisModule }       from './crisis/crisis.module';
 
 /* Routing Module */
 import { AppRoutingModule }   from './app-routing.module';
@@ -18,7 +19,10 @@ import { AppRoutingModule }   from './app-routing.module';
 @NgModule({
 	imports: [
 		BrowserModule,
+
 		ContactModule,
+		CrisisModule,
+
 		AppRoutingModule
 	],
 	declarations: [
