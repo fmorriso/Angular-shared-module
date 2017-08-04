@@ -3,6 +3,7 @@ import { NgModule }           from '@angular/core';
 
 /* App Root */
 import { AppComponent }       from './app.component';
+import { NavigationComponent } from './navigation/navigation.component';
 import { HighlightDirective } from './highlight.directive';
 import { TitleComponent }     from './title.component';
 import { UserService }        from './user.service';
@@ -13,6 +14,7 @@ import { ContactModule }      from './contact/contact.module';
 /* Routing Module */
 import { AppRoutingModule }   from './app-routing.module';
 
+
 @NgModule({
 	imports: [
 		BrowserModule,
@@ -22,7 +24,8 @@ import { AppRoutingModule }   from './app-routing.module';
 	declarations: [
 		AppComponent,
 		HighlightDirective,
-		TitleComponent
+		TitleComponent,
+		NavigationComponent
 	],
 	providers: [UserService],
 	bootstrap: [AppComponent]

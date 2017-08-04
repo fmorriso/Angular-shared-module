@@ -39,13 +39,18 @@ ng generate pipe contact/Awesome
 The feature modules were generated using
 ```
 ng generate module Contact --routing
+manually add the following to app.module.ts:
+/* Contact - one-stop shopping via a separate feature module: */
+import { ContactModule }      from './contact/contact.module';
 
 ng generate module Crisis --routing 
-ng generate component Crisis --module app.module
+ng generate component Crisis 
 Add CrisisModule to imports[] in app.module.ts 
 
 ng generate module Hero --routing --module app.module
-ng generate component Hero --module app.module
+ng generate component Hero 
+Manually add the following to app.module.ts
+
 Add HeroModule to imports[] in app.module.ts 
 ```
 
