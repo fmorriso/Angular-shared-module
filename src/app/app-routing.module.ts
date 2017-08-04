@@ -3,19 +3,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {ContactComponent} from './contact/contact.component';
 
 const routes: Routes = [
-	{
-		path: 'contact',
-		component: ContactComponent
-	},
-	{
-		path: '',
-		redirectTo: '/contact',
-		pathMatch: 'full'
-	},
-	{
-		path: '**',
-		component: ContactComponent
-	}
+	{ path: '', redirectTo: '/contact', pathMatch: 'full' }
 ];
 
 @NgModule({

@@ -36,6 +36,13 @@ ng generate service contact/Contact --module app.module
 ng generate pipe contact/Awesome
 ```
 
+The feature modules were generated using
+```
+ng generate module Contact --routing
+ng generate module Crisis --routing
+ng generate module Hero --routing 
+```
+
 When building the application, I have found that specifying the `--prod` option when running `ng build` tends to find things that
 running without `--prod` remains blissfully unaware of, so, even though there is additional overhead, I **always** build with the --prod option.
 To facilitate this, I added a `build-prod` to `package.json`:
