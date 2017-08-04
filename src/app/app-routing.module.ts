@@ -5,8 +5,10 @@ const routes: Routes = [
 	{ path: '', redirectTo: '/contact', pathMatch: 'full' }
 ];
 
+const routeConfig = {enableTracing: true};
+
 @NgModule({
-	imports: [RouterModule.forRoot(routes)],
+	imports: [RouterModule.forRoot(routes, routeConfig)],
 	exports: [RouterModule]
 })
 export class AppRoutingModule {

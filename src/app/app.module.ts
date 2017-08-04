@@ -2,7 +2,6 @@ import { BrowserModule }      from '@angular/platform-browser';
 import { NgModule }           from '@angular/core';
 
 /* App Root */
-
 import { AppComponent }       from './app.component';
 import { HighlightDirective } from './highlight.directive';
 import { TitleComponent }     from './title.component';

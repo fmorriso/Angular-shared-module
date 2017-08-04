@@ -39,9 +39,18 @@ ng generate pipe contact/Awesome
 The feature modules were generated using
 ```
 ng generate module Contact --routing
-ng generate module Crisis --routing
-ng generate module Hero --routing 
+
+ng generate module Crisis --routing 
+ng generate component Crisis --module app.module
+Add CrisisModule to imports[] in app.module.ts 
+
+ng generate module Hero --routing --module app.module
+ng generate component Hero --module app.module
+Add HeroModule to imports[] in app.module.ts 
 ```
+
+To change to lazy loading of the Crisis and Hero feature modules, I removed the automatic mention of them
+from app.module.
 
 When building the application, I have found that specifying the `--prod` option when running `ng build` tends to find things that
 running without `--prod` remains blissfully unaware of, so, even though there is additional overhead, I **always** build with the --prod option.
