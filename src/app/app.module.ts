@@ -10,27 +10,21 @@ import { UserService }        from './user.service';
 
 /* Feature Modules that have their own routing */
 import { ContactModule }      from './contact/contact.module';
-import { CrisisModule }       from './crisis/crisis.module';
+//import { CrisisModule }       from './crisis/crisis.module';
 
 /* Routing Module */
 import { AppRoutingModule }   from './app-routing.module';
-
 
 @NgModule({
 	imports: [
 		BrowserModule,
 
 		ContactModule,
-		CrisisModule,
+		//CrisisModule,
 
 		AppRoutingModule
 	],
-	declarations: [
-		AppComponent,
-		HighlightDirective,
-		TitleComponent,
-		NavigationComponent
-	],
+	declarations: [	AppComponent, HighlightDirective, TitleComponent, NavigationComponent ],
 	providers: [UserService],
 	bootstrap: [AppComponent]
 })

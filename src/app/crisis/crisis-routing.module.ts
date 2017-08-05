@@ -1,10 +1,14 @@
-import {NgModule} from '@angular/core';
+import {NgModule}             from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 
-import {CrisisComponent} from './crisis.component';
+//import {CrisisComponent} from './crisis.component';
+import {CrisisDetailComponent} from './crisis-detail.component';
+import {CrisisListComponent}   from './crisis-list.component';
 
 const routes: Routes = [
-	{path: 'crisis', component: CrisisComponent}
+	{ path: '', redirectTo: 'list', pathMatch: 'full'},
+	{ path: 'list', component: CrisisListComponent },
+	{ path: ':id', component: CrisisDetailComponent }
 ];
 
 @NgModule({

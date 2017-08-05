@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'app-crisis',
-  templateUrl: './crisis.component.html',
-  styleUrls: ['./crisis.component.scss']
+	selector: 'app-crisis',
+	templateUrl: './crisis.component.html',
+	styleUrls: ['./crisis.component.scss']
 })
 export class CrisisComponent implements OnInit {
+	private compName: string = 'CrisisComponent';
 
-  constructor() { }
+	constructor() {
+		console.log(`${this.compName} - constructor`);
+	}
 
-  ngOnInit() {
-  }
+	ngOnInit() {
+		console.log(`${this.compName} - ngOnInit`);
+	}
 
 }
