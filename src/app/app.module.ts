@@ -10,21 +10,22 @@ import { UserService }        from './user.service';
 
 /* Feature Modules that have their own routing */
 import { ContactModule }      from './contact/contact.module';
-//import { CrisisModule }       from './crisis/crisis.module';
+import { CrisisModule }       from './crisis/crisis.module';
 
 /* Routing Module */
-import { AppRoutingModule }   from './app-routing.module';
-
+import { AppRoutingModule, routableComponents }   from './app-routing.module';
+//import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+// angular2-first-look.azurewebsites.net
 @NgModule({
 	imports: [
 		BrowserModule,
 
 		ContactModule,
-		//CrisisModule,
+		CrisisModule,
 
 		AppRoutingModule
 	],
-	declarations: [	AppComponent, HighlightDirective, TitleComponent, NavigationComponent ],
+	declarations: [	AppComponent, HighlightDirective, TitleComponent, NavigationComponent, routableComponents ],
 	providers: [UserService],
 	bootstrap: [AppComponent]
 })

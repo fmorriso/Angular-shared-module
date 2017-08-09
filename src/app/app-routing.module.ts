@@ -1,10 +1,13 @@
 import {NgModule}             from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
+
+import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 //import {CrisisModule} from './crisis/crisis.module';
 
 const routes: Routes = [
-	{ path: '', redirectTo: 'contact', pathMatch: 'full' },
-	{ path: 'crisis', loadChildren: './crisis/crisis.module#CrisisModule' },
+	{ path: '',  pathMatch: 'full', redirectTo: 'contact' },
+	// { path: 'crisis', loadChildren: './crisis/crisis.module#CrisisModule' },
+	{ path: '**', pathMatch: 'full', component: PageNotFoundComponent }
 ];
 /*
 { path: 'crisis', loadChildren: './crisis/crisis.module#CrisisModule' },
@@ -20,3 +23,5 @@ const routeConfig = {enableTracing: true};
 })
 export class AppRoutingModule {
 }
+
+export const routableComponents = [PageNotFoundComponent];

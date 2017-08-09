@@ -8,6 +8,13 @@ Additional supporting tools:
 * TypeScript 2.4.2
 * WebStorm 2017.2.1 EAP
 
+### John Papa Examples
+
+#27 - Eager loading routed module
+
+
+http://angular2-first-look.azurewebsites.net
+
 ## Angular-CLI considerations
 
 The initial scaffolding of the application was performed via the following Angular-CLI command:
