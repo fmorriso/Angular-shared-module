@@ -7,5 +7,5 @@ import { Component, VERSION } from '@angular/core';
 })
 export class AppComponent {
   title = `app using Angular version ${VERSION.full}`;
-  subtitle = '(v1)';
+  subtitle = `(v1) using Angular version ${VERSION.full}`;
 }
